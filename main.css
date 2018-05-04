@@ -1,7 +1,13 @@
+/*-----------------------------------------------
+*   Container size
+-----------------------------------------------*/
 
 
-
-
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1090px;
+    }
+}
 
 
 /*-----------------------------------------------
@@ -58,16 +64,19 @@ nav.navbar .navbar-nav li a {
 -----------------------------------------------*/
 body {
 	background-color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
 	padding-top: 70px;
 }
 
 section {
 	display: block;
+	
 
 }
 
 
 h1 {
+	font-size: 24px;
 	text-align: center;
 	text-transform: uppercase;
 	position: relative;
@@ -95,6 +104,7 @@ h3 {
 	display: inline-block;
 	font-size: 15px;
 	text-align: center;
+	font-weight: 700;
 }
 
 .crop {
@@ -111,8 +121,18 @@ h3 {
 		width: auto;
 }
 
+#about p {
+	font-size: 16px;
+	line-height: 24px;
+}
+
 .vcenter {
 	display: inline-block;
     vertical-align: middle;
     float: none;	
+}
+
+#contact h4:hover {
+	color: red;
+	font-size: 20px;
 }
