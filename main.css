@@ -1,8 +1,14 @@
 /*-----------------------------------------------
+*   Colors
+-----------------------------------------------*/
+/*	main blue: #1f3d7a;
+
+
+/*-----------------------------------------------
 *   Container size
 -----------------------------------------------*/
 
-/*
+
 @media (min-width: 1200px) {
     .container{
         max-width: 1090px;
@@ -15,54 +21,63 @@
 -----------------------------------------------*/
 /* navbar styling */
 
-		/*
-
-nav.navbar {
-	background-color: #3366cc;
-	border: 0;
+.navbar-custom {
+	background-color: #1f3d7a;
+	padding-bottom: 0;
 	text-transform: uppercase;
 }
 
-.navbar-header .navbar-brand {
+.navbar .navbar-brand {
 	color: #ffffff;
 	font-weight: 500;
 	letter-spacing: 2px;
 }
 
-nav.navbar .navbar-nav li a {
-	color: #ffffff;
-	letter-spacing: 2px;
-	font-weight: 500;
+.nav-item {
+	color: #ffffff !important;
+	letter-spacing: 1px;
+	font-weight: 400;
 }
 
 
 
 
 /* navbar active button effect */
-/*if ain't working later, try add .navbar-default .navbar-nav > .active{
-    color: #000;
-    background: #d65c14;
-}
-*/
-			/*
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-    color: #000000;
+
+.navbar-collapse .navbar-nav .active {
+    color: #000000 !important;
     background-color: #ffffff;
 }
+
 /* navbar buttons hover and focus effect */
-			/*
-.navbar-default .navbar-header a:hover {
+
+.navbar .navbar-brand:hover {
 	color: #ffffff;
 	text-shadow: 0px 0px 6px #ffffff;
 }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus  {
-	color: #00000;
+.navbar-nav .nav-item:hover  {
+	color: #000000 !important;
 	background-color: #ffffff;
 }
 
+/* navbar items align to the right side */
+
+.ml-auto {
+	left: auto !important;
+    right: 10px;
+}
+
+/* navbar toggler */
+
+.navbar-toggler {
+	border: 2px solid #ffffff !important;
+	margin-bottom: 5px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
 
 /*-----------------------------------------------
 *   Container
@@ -94,7 +109,7 @@ h1::after {
 	height: 1.8px;
 	width: 20%;
 	left:0;right:0;margin:0 auto;
-	background: #3366cc;
+	background: #1f3d7a;
     z-index: 1;
     
     
@@ -113,7 +128,7 @@ h3 {
 }
 
 .crop {
-	border: 1.5px solid #3366cc;
+	border: 1.5px solid #1f3d7a;
 	border-radius: 50%;
 	height: 200px;
 	overflow: hidden;
