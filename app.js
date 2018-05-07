@@ -2,7 +2,7 @@
 *   script by w3schools
 https://www.w3schools.com/bootstrap/bootstrap_ref_js_scrollspy.asp
 changed line "scrollTop: $(hash).offset().top " to "scrollTop: $(hash).offset().top - 80" to prevent scrolling to low
-changed 'preventDefault' to 'stopPropagation' to prevent jumping up like default behaviour
+deleted window.location.hash
 -----------------------------------------------*/
 
 
@@ -18,7 +18,7 @@ $( document ).ready(function() {
       if (this.hash !== "") {
 
         // Prevent default anchor click behavior
-        event.stopPropagation();
+        event.preventDefault();
 
         // Store hash
         var hash = this.hash;
@@ -26,15 +26,11 @@ $( document ).ready(function() {
         // Using jQuery's animate() method to add smooth page scroll
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate({
-          scrollTop: $(hash).offset().top - 70
-        }, 400, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
+          scrollTop: $(hash).offset().top - 80
+        }, 400);
 
       } // End if
 
     });
-
 });
+
