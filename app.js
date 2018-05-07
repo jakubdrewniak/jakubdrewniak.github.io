@@ -1,7 +1,16 @@
+/*-----------------------------------------------
+*   script by w3schools
+https://www.w3schools.com/bootstrap/bootstrap_ref_js_scrollspy.asp
+changed line "scrollTop: $(hash).offset().top " to "scrollTop: $(hash).offset().top - 80" to prevent scrolling to low
+changed line "window.location.hash = hash;" to window.location.hash = hash - 70; to prevent jumping up like default behaviour
+
+-----------------------------------------------*/
+
+
 $( document ).ready(function() {
 
     // Add scrollspy to <body>
-    $('body').scrollspy({target: ".navbar", offset: 50});
+    $('body').scrollspy({target: ".navbar", offset: 200});
 
     // Add smooth scrolling on all links inside the navbar
     $(".navbar a").on('click', function(event) {
@@ -18,11 +27,11 @@ $( document ).ready(function() {
         // Using jQuery's animate() method to add smooth page scroll
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
+          scrollTop: $(hash).offset().top - 70
+        }, 400, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
+          window.location.hash = hash - 70;
         });
 
       } // End if
