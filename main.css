@@ -49,12 +49,12 @@
 
 /* navbar links hover and focus effect */
 
-.navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
+.navbar .navbar-brand:hover {
 	color: #ffffff;
 	text-shadow: 0px 0px 6px #ffffff;
 }
 
-.navbar-nav .nav-item:hover, .navbar-nav .nav-item:focus  {
+.navbar-nav .nav-item:hover  {
 	color: #000000 !important;
 	background-color: #ffffff;
 }
@@ -74,7 +74,7 @@
 	width: 58px;
 }
 
-.navbar-toggler:hover, .navbar-toggler:focus {
+.navbar-toggler:hover {
 	background-color: #ffffff;
 }
 

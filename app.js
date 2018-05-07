@@ -2,15 +2,14 @@
 *   script by w3schools
 https://www.w3schools.com/bootstrap/bootstrap_ref_js_scrollspy.asp
 changed line "scrollTop: $(hash).offset().top " to "scrollTop: $(hash).offset().top - 80" to prevent scrolling to low
-changed line "window.location.hash = hash;" to window.location.hash = hash - 70; to prevent jumping up like default behaviour
-
+changed 'preventDefault' to 'stopPropagation' to prevent jumping up like default behaviour
 -----------------------------------------------*/
 
 
 $( document ).ready(function() {
 
     // Add scrollspy to <body>
-    $('body').scrollspy({target: ".navbar", offset: 200});
+    $('body').scrollspy({target: ".navbar", offset: 100});
 
     // Add smooth scrolling on all links inside the navbar
     $(".navbar a").on('click', function(event) {
@@ -19,7 +18,7 @@ $( document ).ready(function() {
       if (this.hash !== "") {
 
         // Prevent default anchor click behavior
-        event.preventDefault();
+        event.stopPropagation();
 
         // Store hash
         var hash = this.hash;
@@ -31,7 +30,7 @@ $( document ).ready(function() {
         }, 400, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash - 70;
+          window.location.hash = hash;
         });
 
       } // End if
