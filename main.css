@@ -123,6 +123,22 @@ h1::after {
     
 }
 
+/* scroll to top button */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 150px;
+    z-index: 99;
+    background-color: #1f3d7a;
+}
+
+#myBtn:hover {
+    background-color: #ffffff;
+    border: 1px solid #1f3d7a;
+    color: #1f3d7a;
+}
+
 /* about */
 
 .crop {
@@ -143,6 +159,18 @@ h1::after {
 	font-size: 16px;
 	line-height: 24px;
 }
+
+.btn-outline-primary {
+    color: #1f3d7a;
+    background-color: transparent;
+    background-image: none;
+    border-color: #1f3d7a;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
+    color: #fff;
+    background-color: #1f3d7a;
+    }
 
 /* portfolio */
 
