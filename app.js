@@ -1,6 +1,3 @@
-
-
-
 $( document ).ready(function() {
 
 /*-----------------------------------------------
@@ -36,24 +33,21 @@ deleted window.location.hash
 
 });
 
-/*-----------------------------------------------
-*   script by w3schools
-https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
------------------------------------------------*/
+$(document).ready(function(){
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+    //Check to see if the window is top if not then display button
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 50) {
+            $('#myBtn').fadeIn();
+        } else {
+            $('#myBtn').fadeOut();
+        }
+    });
 
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
+    //Click event to scroll to top
+    $('#myBtn').click(function(){
+        $('html, body').animate({scrollTop : 0},400);
+        return false;
+    });
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+});
