@@ -144,7 +144,7 @@ h1::after {
 
 #home {
 	background-color: #1f3d7a;
-	height:100vh;
+	min-height: :100vh;
 	margin: 0;
 }
 
