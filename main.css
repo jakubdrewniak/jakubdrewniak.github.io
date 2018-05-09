@@ -10,7 +10,7 @@
 
 
 @media (min-width: 1200px) {
-    .container{
+    .container {
         max-width: 1090px;
     }
 }
@@ -23,7 +23,6 @@
 
 .navbar-custom {
 	background-color: #1f3d7a;
-	text-transform: uppercase;
 }
 
 .navbar .navbar-brand {
@@ -94,8 +93,8 @@
 body {
 	background-color: #ffffff;
 	font-family: 'Open Sans', sans-serif;
-	padding-top: 70px;
-	position: relative;
+	padding-top: 66px;
+	position: relative
 }
 
 section {
@@ -139,6 +138,40 @@ h1::after {
     background-color: #ffffff;
     border: 1px solid #1f3d7a;
     color: #1f3d7a;
+}
+
+/* home */
+
+#home {
+	background-color: #1f3d7a;
+	height:100vh;
+	margin: 0;
+}
+
+#home p {
+	color: #4976d0;
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 24px;
+	margin-bottom: 5px;
+}
+
+#home strong {
+	color: #ffffff;
+	font-size: 1.6em;
+}
+
+.ind2 {
+	padding-left: 20px;
+}
+.ind3 {
+	padding-left: 40px;
+}
+.ind4 {
+	padding-left: 60px;
+}
+.ind5 {
+	padding-left: 80px;
 }
 
 /* about */

@@ -30,12 +30,12 @@ deleted window.location.hash
       } // End if
     });
 
+/*-----------------------------------------------
+*   script by paulund
+https://paulund.co.uk/how-to-create-an-animated-scroll-to-top-button-with-jquery
+-----------------------------------------------*/
 
-});
-
-$(document).ready(function(){
-
-    //Check to see if the window is top if not then display button
+//Check to see if the window is top if not then display button
     $(window).scroll(function(){
         if ($(this).scrollTop() > 50) {
             $('#myBtn').fadeIn();
@@ -51,3 +51,7 @@ $(document).ready(function(){
     });
 
 });
+ 
+
+
+

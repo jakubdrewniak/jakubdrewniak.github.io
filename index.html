@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>jdPortfolio</title>
+		<title>Jakub Drewniak Portfolio</title>
 		<meta charset='utf-8'>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">		
@@ -10,97 +10,118 @@
     	<link rel='stylesheet' href='normalize.css'>
     	<link rel='stylesheet' href='main.css'>
 	</head>
-	<body class='container'>
+	<body>
+		<!-- home -->
+	  	<div class='container-fluid row justify-content-center visible-md-block' id='home'>
+			<section class='col-md-11'>
+				<p>&lt;!DOCTYPE html&gt;</p>
+					<p class='ind2'> &lt;html&gt;</p>
+						<p class='ind3'>&lt;head&gt;</p>
+							<p class='ind4'>&lt;title&gt;<strong>Jakub Drewniak Portfolio</strong>&lt;/title&gt;</p>
+							<p class='ind4'>&lt;meta charset='utf-8'&gt;</p>
+							<p class='ind4'>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</p>
+							<p class='ind4'>&lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"&gt;</p>
+							<p class='ind4'>&lt;link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"&gt;</p>
+							<p class='ind4'>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;</p>
+							<p class='ind4'>&lt;link rel='stylesheet' href='normalize.css'&gt;</p>
+							<p class='ind4'>&lt;link rel='stylesheet' href='main.css'&gt;</p>
+						<p class='ind3'>&lt;/head&gt;</p>
+						<p class='ind3'>&lt;body&gt;</p>
+							<p class='ind4'>&lt;div class='container'&gt;</p>
+								<p class='ind5'>&lt;!-- scroll to top button --&gt;</p>
+								<p class='ind5'>&lt;button type='button' class='btn btn-primary' onclick="topFunction()" id="myBtn"&gt; &lt;i class="fa fa-chevron-up"&gt; &lt;/i&gt; &lt;/button&gt;</p>
+								<p class='ind5'>&lt;!-- navigation bar --&gt;</p>
+								<p class='ind5'>&lt;nav class="navbar fixed-top navbar-expand-sm navbar-custom navbar-dark" data-target='#myNavbar'&gt;</p>
+								<p class='ind5'>...</p>
+			</section>
+		</div>
 
-		<!-- scroll to top button -->
-		<button type='button' class='btn btn-primary' onclick="topFunction()" id="myBtn"><i class="fa fa-chevron-up"></i></button>
 
-		<!-- text/logo and navigation bar -->
-		<nav class="navbar fixed-top navbar-expand-sm navbar-custom navbar-dark" data-target='#myNavbar'>
-	  		<a class="navbar-brand" href="#">Jakub Drewniak</a>
-	  		<button class="custom-toggler navbar-toggler justify-content-center" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-	   			<span class="navbar-toggler-icon"></span>
- 			</button>
-	  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
-		  		<div class="navbar-nav ml-auto">
-			      	<a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
-			      	<a class="nav-item nav-link" href="#about">About</a>
-		      		<a class="nav-item nav-link" href="#portfolio">Portfolio</a>
-		      		<a class="nav-item nav-link" href="#contact">Contact</a>
-		    	</div>
-		    </div>
-	  	</nav>
-	  	
-	  	<!-- home -->
+		<div class='container'>
+			<!-- scroll to top button -->
+			<button type='button' class='btn btn-primary' onclick="topFunction()" id="myBtn"><i class="fa fa-chevron-up"></i></button>
 
-		<section id='home' class='col-md-12'>
-			<div class='row'>
-				<h1 class='col-md-12'>Home</h1>
-			</div>
-		</section>
+			<!-- navigation bar -->
+			<nav class="navbar fixed-top navbar-expand-sm navbar-custom navbar-dark" data-target='#myNavbar'>
+		  		<a class="navbar-brand" href="#">index.html</a>
+		  		<button class="custom-toggler navbar-toggler justify-content-center" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		   			<span class="navbar-toggler-icon"></span>
+	 			</button>
+		  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			  		<div class="navbar-nav ml-auto">
+				      	<a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+				      	<a class="nav-item nav-link" href="#about">About</a>
+			      		<a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+			      		<a class="nav-item nav-link" href="#contact">Contact</a>
+			    	</div>
+			    </div>
+		  	</nav>
+		  	
+		  	
 
-		<!-- about -->
+			<!-- about -->
 
-		<section id='about' class='col-md-12'>
-			<div class='row'>
-				<h1 class='col-md-12'>About me</h1>
-			</div>
-			<div class='row justify-content-center align-items-center'>
-				<div class='crop'>
-					<img src='images/lookup.jpg' alt='Photo of author literally looking up'>
+			<section id='about' class='col-md-12'>
+				<div class='row'>
+					<h1 class='col-md-12'>About me</h1>
 				</div>
-				<div class='col-md-6'>
-					<p>My name is Jakub and I'm a civil engineering designer since 2014 and I've graduated in 2015. Knowing all of the bounderies of my current trade, recently I've been looking for an opportunity to change my career path so I've started to learn basic front-end developer skills to find out if it's a way for me. </p>
-					<p>So here I am taking new direction. </p>
-					<p>I'm also into sci-fi literature and poi spinning.</p>
-					<a class="btn btn-outline-primary" href="https://www.instagram.com/p/BbNkXg9Apt4/?taken-by=jdspins" role="button" target='_blank'>Find out what poi spinning is</a>
+				<div class='row justify-content-center align-items-center'>
+					<div class='crop'>
+						<img src='images/lookup.jpg' alt='Photo of author literally looking up'>
+					</div>
+					<div class='col-md-6'>
+						<p>My name is Jakub and I'm a civil engineering designer since 2014 and I've graduated in 2015. Knowing all of the bounderies of my current trade, recently I've been looking for an opportunity to change my career path so I've started to learn basic front-end developer skills to find out if it's a way for me. </p>
+						<p>So here I am taking new direction. </p>
+						<p>I'm also into sci-fi literature and poi spinning.</p>
+						<a class="btn btn-outline-primary" href="https://www.instagram.com/p/BbNkXg9Apt4/?taken-by=jdspins" role="button" target='_blank'>Find out what poi spinning is</a>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<!-- portfolio -->
+			<!-- portfolio -->
 
-		<section id='portfolio'>
-			<div class='row'>
-				<h1 class='col-md-12'>Portfolio</h1>
-			</div>
-			<div class="justify-content-center">
-				<img src='images/doggo1.jpg' alt='doggo' class='crop-doggo'>
-				<img src='images/doggo2.jpg' alt='doggo' class='crop-doggo'>
-				<img src='images/doggo3.jpg' alt='doggo' class='crop-doggo'>
-			</div>
-		</section>
-
-		<!-- contact -->
-
-		<section id='contact'>
-			<div class='row'>
-				<h1 class='col-md-12'>Contact</h1>
-			</div>
-			<div class='row justify-content-center'>
-				<h5><i class="fa fa-envelope"></i> drewniak.jakub@gmail.com</h5>
-				<h5><i class="fa fa-phone-square"></i>+48 663 280 290</h5>
-			</div>	
-			<div class='row justify-content-center'>
-				<div class='contact-icon'>
-					<a href="https://github.com/jakubdrewniak" target="_blank"><i class="fa fa-github fa-4x"></i></br>My Github</a>
+			<section id='portfolio'>
+				<div class='row'>
+					<h1 class='col-md-12'>Portfolio</h1>
 				</div>
-				<div class='contact-icon'>
-					<a href="#" target="_blank"><i class="fa fa-linkedin fa-4x"></i></br>My LinkedIn</a>
+				<div class="justify-content-center">
+					<img src='images/doggo1.jpg' alt='doggo' class='crop-doggo'>
+					<img src='images/doggo2.jpg' alt='doggo' class='crop-doggo'>
+					<img src='images/doggo3.jpg' alt='doggo' class='crop-doggo'>
 				</div>
-				<div class='contact-icon'>
-					<a href="https://www.freecodecamp.org/jakubdrewniak" target="_blank"><i class="fa fa-free-code-camp fa-4x"></i></br>My FCC</a>
-				</div>
-				<div class='contact-icon'>
-					<a href="https://www.codeschool.com/users/jakubdrewniak" target="_blank"><i class="fa fa-chevron-left fa-4x"></i><i class="fa fa-chevron-right fa-4x"></i></br>My CodeSchool</a>
-				</div>
-			</div>
-		</section>
+			</section>
 
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-		<script src="app.js"></script>
+			<!-- contact -->
+
+			<section id='contact'>
+				<div class='row'>
+					<h1 class='col-md-12'>Contact</h1>
+				</div>
+				<div class='row justify-content-center'>
+					<h5><i class="fa fa-envelope"></i> drewniak.jakub@gmail.com</h5>
+					<h5><i class="fa fa-phone-square"></i>+48 663 280 290</h5>
+				</div>	
+				<div class='row justify-content-center'>
+					<div class='contact-icon'>
+						<a href="https://github.com/jakubdrewniak" target="_blank"><i class="fa fa-github fa-4x"></i></br>My Github</a>
+					</div>
+					<div class='contact-icon'>
+						<a href="#" target="_blank"><i class="fa fa-linkedin fa-4x"></i></br>My LinkedIn</a>
+					</div>
+					<div class='contact-icon'>
+						<a href="https://www.freecodecamp.org/jakubdrewniak" target="_blank"><i class="fa fa-free-code-camp fa-4x"></i></br>My FCC</a>
+					</div>
+					<div class='contact-icon'>
+						<a href="https://www.codeschool.com/users/jakubdrewniak" target="_blank"><i class="fa fa-chevron-left fa-4x"></i><i class="fa fa-chevron-right fa-4x"></i></br>My CodeSchool</a>
+					</div>
+				</div>
+			</section>
+
+			
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+			<script src="app.js"></script>
+		</div>	
 	</body>
 </html>
