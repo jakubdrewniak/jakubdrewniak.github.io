@@ -28,7 +28,7 @@ deleted window.location.hash
           scrollTop: $(hash).offset().top - 80
         }, 400);
       } // End if
-    });
+});
 
 /*-----------------------------------------------
 *   script by paulund
@@ -36,7 +36,7 @@ https://paulund.co.uk/how-to-create-an-animated-scroll-to-top-button-with-jquery
 -----------------------------------------------*/
 
 //Check to see if the window is top if not then display button
-    $(window).scroll(function(){
+$(window).scroll(function(){
         if ($(this).scrollTop() > 50) {
             $('#myBtn').fadeIn();
         } else {
@@ -52,6 +52,12 @@ https://paulund.co.uk/how-to-create-an-animated-scroll-to-top-button-with-jquery
 
 });
  
+ $( document ).ready(function() {
+//when toggler button is visible, collapse menu after clicking nav link
 
+ $('body').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
+});
 
 
