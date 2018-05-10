@@ -52,12 +52,12 @@ $(window).scroll(function(){
 
 });
  
- $( document ).ready(function() {
+ 
 //when toggler button is visible, collapse menu after clicking nav link
 
  $('body').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
-});
+
 
 
