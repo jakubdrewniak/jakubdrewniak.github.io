@@ -141,6 +141,18 @@ h1::after {
     color: #1f3d7a;
 }
 
+@media (max-width: 1030px) and (min-width: 576px) {
+    #myBtn {
+    right: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    #myBtn {
+    right: 50px;
+    }
+}
+
 /* home */
 
 #home {
@@ -236,6 +248,10 @@ h5 {
 	color: #1f3d7a;
 	}
 
+.contact-icon {
+	height: 130px;
+}
+
 .contact-icon a {
 	color: #1f3d7a;
 	display: inline-block;
@@ -248,7 +264,7 @@ h5 {
 
 .contact-icon a:hover {
 	color: #5d85d5;
-	font-size: 14px;
+	font-size: 13px;
 	}
 
 /* footer */
