@@ -11,7 +11,7 @@ deleted window.location.hash
     $('body').scrollspy({target: ".navbar", offset: 100});
 
     // Add smooth scrolling on all links inside the navbar
-    $(".navbar a").on('click', function(event) {
+    $(".navbar a, #footer a").on('click', function(event) {
 
       // Make sure this.hash has a value before overriding default behavior
       if (this.hash !== "") {
@@ -53,7 +53,7 @@ $(window).scroll(function(){
 });
  
  
-//when toggler button is visible, collapse menu after clicking nav link
+//when toggler button is visible, collapse menu after clicking nav link or anywhere on body
 
  $('body').on('click', function(){
     $('.navbar-collapse').collapse('hide');
