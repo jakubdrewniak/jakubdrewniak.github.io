@@ -37,6 +37,7 @@
 	color: #ffffff !important;
 	letter-spacing: 1px;
 	font-weight: 400;
+	padding: 8px !important;
 	text-transform: uppercase;
 }
 
@@ -128,7 +129,7 @@ h1::after {
     position: fixed;
     bottom: 20px;
     right: 150px;
-    z-index: 99;
+    z-index: 2;
     background-color: #1f3d7a;
     border-radius: 50%;
     border-color: #ffffff;
@@ -149,7 +150,7 @@ h1::after {
 
 @media (max-width: 576px) {
     #myBtn {
-    right: 50px;
+    right: 10px;
     }
 }
 
@@ -278,7 +279,7 @@ h5 {
 #footer ul {
 	display: inline-block;
 	margin-bottom: 5px;
-	padding: 0;
+	padding: 0 95px;
 }
 
 #footer li {
