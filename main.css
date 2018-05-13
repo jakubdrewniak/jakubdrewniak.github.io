@@ -158,8 +158,9 @@ h1::after {
 
 #home {
 	background-color: #1f3d7a;
-	min-height: :100vh;
+	height: 100vh;
 	margin: 0;
+	overflow: hidden;
 }
 
 #home p {
