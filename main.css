@@ -64,7 +64,6 @@
 
 .ml-auto {
 	left: auto !important;
-    right: 10px;
 }
 
 /* navbar toggler */
@@ -157,11 +156,13 @@ h1::after {
 /* home */
 
 #home {
-	background-color: #1f3d7a;
-	height: 100vh;
-	margin: 0;
+	background: linear-gradient(#1f3d7a 40%, #4976d0);
+	height: calc(100vh - 66px);
+	margin: 0 auto;
 	overflow: hidden;
+	right: 0;	
 }
+
 
 #home p {
 	color: #4976d0;
@@ -193,6 +194,9 @@ h1::after {
 }
 .ind5 {
 	padding-left: 80px;
+}
+.ind6 {
+	padding-left: 100px;
 }
 
 /* about */
