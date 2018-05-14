@@ -94,7 +94,6 @@
 body {
 	background-color: #ffffff;
 	font-family: 'Open Sans', sans-serif;
-	padding-top: 66px;
 	position: relative
 }
 
@@ -158,7 +157,7 @@ h1::after {
 
 #home {
 	background: linear-gradient(#1f3d7a 40%, #2f5cb6 90%, #4976d0);
-	height: calc(100vh - 66px);
+	height: 100vh;
 	margin: 0 auto;
 	overflow: hidden;
 	right: 0;	
