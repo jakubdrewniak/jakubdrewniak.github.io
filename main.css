@@ -175,10 +175,10 @@ section {
 
 
 #home p {
-	color: #4976d0;
-	font-size: 16px;
+	color: #85a3e0;
+	font-size: 14px;
 	font-weight: 100;
-	line-height: 24px;
+	line-height: 21px;
 	margin-bottom: 5px;
 	transition: 0.4s;
 }
@@ -190,6 +190,7 @@ section {
 
 #home a {
 	color: #ffffff;
+	font-size: 24px;
 }
 
 .ind2 {
