@@ -106,7 +106,7 @@ section {
 	display: block;
 }
 
-h1 {
+.container h1 {
 	font-size: 24px;
 	margin-bottom: 25px;
 	text-align: center;
@@ -114,7 +114,7 @@ h1 {
 	position: relative;
 }
 
-h1::after {
+.container h1::after {
 	position: absolute;
 	content: '';
 	top: 100%;
@@ -168,6 +168,11 @@ h1::after {
 	right: 0;	
 }
 
+#home h1 {
+	color: #ffffff;
+	font-size: 34px;
+}
+
 
 #home p {
 	color: #4976d0;
@@ -183,9 +188,8 @@ h1::after {
 	color: #ffffff;
 }
 
-#home strong {
+#home a {
 	color: #ffffff;
-	font-size: 1.6em;
 }
 
 .ind2 {
@@ -202,6 +206,9 @@ h1::after {
 }
 .ind6 {
 	padding-left: 100px;
+}
+.ind7 {
+	padding-left: 120px;
 }
 
 /* about */
