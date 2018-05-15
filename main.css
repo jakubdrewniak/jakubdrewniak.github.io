@@ -21,8 +21,13 @@
 -----------------------------------------------*/
 /* navbar styling */
 
-.navbar-custom {
-	background-color: #4976d0;
+/* prevent sudden quick movement during scrolling down */
+.fixed-top + .content {
+	padding-top: 66px;
+}
+
+#nbar {
+		background-color: #4976d0;
 }
 
 .navbar .navbar-brand {
@@ -156,7 +161,7 @@ h1::after {
 /* home */
 
 #home {
-	background: linear-gradient(#1f3d7a 40%, #2f5cb6 90%, #4976d0);
+	background: linear-gradient(#1f3d7a 40%, #2f5cb6 80%, #4976d0);
 	height: 100vh;
 	margin: 0 auto;
 	overflow: hidden;
@@ -307,6 +312,5 @@ h5 {
 	text-align: center;
 	margin-bottom: 5px;
 }
-
 
 

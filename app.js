@@ -52,6 +52,9 @@ $(window).scroll(function(){
 
 });
  
+
+
+
  
 //when toggler button is visible, collapse menu after clicking nav link or anywhere on body
 
@@ -61,3 +64,26 @@ $(window).scroll(function(){
 
 
 
+
+
+
+$( document ).ready(function() {
+
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("nbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("fixed-top")
+  } else {
+    navbar.classList.remove("fixed-top");
+  }
+}
+});
