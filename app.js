@@ -55,9 +55,9 @@ $(window).scroll(function(){
 
 
 
- 
-//when toggler button is visible, collapse menu after clicking nav link or anywhere on body
-
+ /*-----------------------------------------------
+when toggler button is visible, collapse menu after clicking nav link or anywhere on body
+-----------------------------------------------*/
  $('body').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
@@ -65,7 +65,9 @@ $(window).scroll(function(){
 
 
 
-
+/*-----------------------------------------------
+*   sticky navbar (sticky navbar from bootstrap4 doesn't work on IE)
+-----------------------------------------------*/
 
 $( document ).ready(function() {
 
