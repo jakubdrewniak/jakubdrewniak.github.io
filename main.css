@@ -255,8 +255,25 @@ section {
 
 /* portfolio */
 
-#portfolio p {
+#portfolio h5 {
 	margin: auto 0;
+	text-align: center;
+}
+
+#portfolio img {
+	display: block;
+	margin: 10px auto 10px auto;
+	height: 300px;
+	width: auto;
+}
+
+#portfolio img:hover {
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 0s ease;
+    -moz-transition: all 0s ease;
+    -o-transition: all 0s ease;
+    -ms-transition: all 0s ease;
+    transition: all 0s ease;
 }
 
 
@@ -286,6 +303,9 @@ h5 {
 	font-size: 13px;
 	}
 
+#mail {
+	color: black;
+}
 /* footer */
 
 #footer {
